@@ -8,46 +8,50 @@ Estructura:
 
 MediVida_iOS/
 ├── MediVida/
-│   ├── Assets.xcassets/                 # Recursos gráficos, iconos y colores
-│   ├── GoogleService-Info.plist         # Configuración de Firebase
+│   ├── Assets.xcassets/
+│   │   └── Recursos graficos, iconos y colores
+│   ├── GoogleService-Info.plist
+│   │   └── Configuracion de Firebase
 │   └── MediVida/
-│       ├── `ContentView.swift`
-│       │                                  # Pantallas principales, navegación y estilos
-│       ├── `MediVidaApp.swift`
-│       │                                  # Punto de entrada SwiftUI
-│       ├── `MediVidaAppDelegate.swift`
-│       │                                  # Configuración e inicialización de Firebase
-│       ├── `MediVidaAuthStore.swift`
-│       │                                  # Inicio, registro y sesión de usuario
-│       ├── `MediVidaAuthView.swift`
-│       │                                  # Interfaz de autenticación
-│       ├── `MediVidaAuthenticatedView.swift`
-│       │                                  # Contenedor de la experiencia autenticada
-│       ├── `MediVidaStore.swift`
-│       │                                  # Estado principal, persistencia y sincronización
-│       └── `MediVidaFirestoreRepository.swift`
-│                                          # Lectura y escritura en Firestore
+│       ├── ContentView.swift
+│       │   └── Pantallas principales, navegacion y estilos
+│       ├── MediVidaApp.swift
+│       │   └── Punto de entrada SwiftUI
+│       ├── MediVidaAppDelegate.swift
+│       │   └── Configuracion e inicializacion de Firebase
+│       ├── MediVidaAuthStore.swift
+│       │   └── Inicio, registro y sesion de usuario
+│       ├── MediVidaAuthView.swift
+│       │   └── Interfaz de autenticacion
+│       ├── MediVidaAuthenticatedView.swift
+│       │   └── Contenedor de la experiencia autenticada
+│       ├── MediVidaStore.swift
+│       │   └── Estado principal y persistencia local
+│       └── MediVidaFirestoreRepository.swift
+│           └── Lectura y escritura en Firestore
 │
 ├── MediVidaCore/
-│   ├── `Models.swift`
-│   │                                  # Modelos, horarios y reglas de programación
-│   ├── `ProfileRules.swift`
-│   │                                  # Validación y reglas del perfil
-│   ├── `MediVidaSavedData.swift`
-│   │                                  # Datos persistidos localmente
-│   ├── `MediVidaSyncCoordinator.swift`
-│   │                                  # Coordinador de sincronización de datos
-│   ├── `MediVidaSyncRepository.swift`
-│   │                                  # Contrato de acceso a datos remotos
-│   ├── `SyncMerge.swift`
-│   │                                  # Combinación entre datos locales y remotos
-│   ├── `SyncQueueState.swift`
-│   │                                  # Cola de cambios pendientes de sincronización
-│   └── `SyncRetryProcessor.swift`
-│                                      # Reintentos de escritura remota
+│   ├── Models.swift
+│   │   └── Modelos, horarios y reglas de programacion
+│   ├── ProfileRules.swift
+│   │   └── Validacion y reglas del perfil
+│   ├── MediVidaSavedData.swift
+│   │   └── Datos persistidos localmente
+│   ├── MediVidaSyncCoordinator.swift
+│   │   └── Coordinador central de sincronizacion
+│   ├── MediVidaSyncRepository.swift
+│   │   └── Contrato de acceso a datos remotos
+│   ├── SyncMerge.swift
+│   │   └── Combinacion de datos locales y remotos
+│   ├── SyncQueueState.swift
+│   │   └── Cola de cambios pendientes
+│   └── SyncRetryProcessor.swift
+│       └── Reintentos de escritura remota
 │
 └── MediVida.xcodeproj/
-    ├── project.pbxproj                 # Configuración Xcode del proyecto
-    ├── project.xcworkspace/            # Espacio de trabajo y dependencias
-    └── xcuserdata/                    # Configuración personal de Xcode
-
+    ├── project.pbxproj
+    │   └── Configuracion del proyecto Xcode
+    ├── project.xcworkspace/
+    │   └── Espacio de trabajo y dependencias
+    └── xcuserdata/
+        └── Configuracion personal de Xcode
